@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <title>Blackchain Mining</title>
+</head>
+<body>
+  <img class="background" src="assets/img/background.svg">
+
+  <div class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <img src="assets/img/logo.svg" alt="BlackChain Mining">
+      </a>
+
+      <div class="header-links">
+        
+          <a href="/#how">How it works</a>
+        
+          <a href="/#faq">FAQ</a>
+        
+          <a href="contact.html">Contact</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="intro">
+    <div class="container">
+      <div class="intro-inner">
+        <div class="intro-text">
+          <h2>Best way to securely invest into mining</h2>
+          <p class="text">
+            We provide secure mining services by handling the technical side for investors that don’t have time to deal with it, and they pick up the profits from mining
+          </p>
+          <div class="intro-buttons">
+            <a class="button" href="/contact.html">Contact Us</a>
+            <a class="intro-buttons_secondary" href="how">How it works?</a>
+          </div>
+        </div>
+        <div class="intro-video">
+          <iframe src="https://player.vimeo.com/video/262521291" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="page_mining">
+  <div class="container">
+    <div class="page_mining-inner">
+      <div class="page_mining-illustration">
+        <img src="assets/img/mining.svg" alt="Mining">
+      </div>
+      <div class="page_mining-text">
+        <h2>What is mining?</h2>
+        <p class="text">
+          Mining is the process of adding transaction records to cryptocurrencies public ledger of past transactions. It is the process that keeps the cryptocurrency network alive.
+          <br><br>
+          Mining is intentionally designed to be resource-intensive and difficult so that the number of blocks found each day by miners remains steady. This so called “proof-of-work” concept is what gives legitimacy to the ledger contained in the network. This is why it’s done with either specialized hardware or GPUs - miners.
+        </p>
+        <br><br>
+        <h2>Where is the catch?</h2>
+        <p class="text">
+          Mining is also used to introduce currency into the system: Miners are paid any transaction fees as well as a "subsidy" of newly created coins. This serves as motivating people to provide security for the system.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page_info-calculator">
+  <div class="container">
+    <h2 class="centered">Calculate the costs and profits of a mining farm</h2>
+
+    <br><br>
+
+    <div class="panel">
+      <div class="panel-item is-alone">
+        <div class="panel-content">Set a number of miners</div>
+        <div class="panel-right">
+          <input class="panel-input" id="miners" type="number" min="1" value="100">
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-container">
+      <div class="panel">
+        <div class="panel-header">Infrastructure cost</div>
+        <div class="panel-body">
+            <div class="panel-item">
+            <div class="panel-content">Hardware</div>
+            <b class="panel-right" id="infra-hardware"></b>
+          </div>
+          <div class="panel-item">
+            <div class="panel-content">Installation and maintanance</div>
+            <b class="panel-right" id="infra-installation"></b>
+          </div>
+          <div class="panel-item">
+            <div class="panel-content">Taxes</div>
+            <b class="panel-right" id="infra-taxes"></b>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="panel-content">Total</div>
+          <div class="panel-right" id="infra-total"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">Monthly revenue</div>
+        <div class="panel-body">
+          <div class="panel-item">
+            <div class="panel-content">Mined Ethereum coins</div>
+            <b class="panel-right" id="revenue-mined"></b>
+          </div>
+          <div class="panel-item">
+            <div class="panel-content">Maintanance service</div>
+            <b class="panel-right" id="revenue-maintenance"></b>
+          </div>
+          <div class="panel-item">
+            <div class="panel-content">Electricity</div>
+            <b class="panel-right" id="revenue-electricity"></b>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="panel-content">Total</div>
+          <div class="panel-right" id="revenue-total"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-content">Yearly profit</div>
+        <div class="panel-right">calculation based on <span id="eth-rate"></span> / ETH *</div>
+      </div>
+      <div class="panel-body">
+        <canvas id="chart"></canvas>
+      </div>
+    </div>
+
+    <br>
+    <div class="page_info-calculator_disclaimer">
+      * ETH price is based on average price in Q1 of 2018
+    </div>
+  </div>
+</div>
+
+
+<div class="page_how" id="how">
+  <div class="container">
+    <h1 class="centered">How it works</h1>
+    <div class="page_how-items">
+      
+      <div class="page_how-item">
+      <div class="page_how-item_content">
+          <div class="page_how-item_number">1</div>
+          <div class="page_how-item_text">
+            <h2>Submitted transactions</h2>
+            <p class="text">
+              Transactions are submitted into the network by users sending tokens/coins
+            </p>
+          </div>
+        </div>
+        <div class="page_how-item_icon">
+          <img src="assets/img/icons/transactions.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="page_how-item is-inverted">
+      <div class="page_how-item_content">
+          <div class="page_how-item_number">2</div>
+          <div class="page_how-item_text">
+            <h2>Blocks get formed</h2>
+            <p class="text">
+              Miners like us form packages of the transactions into minable blocks
+            </p>
+          </div>
+        </div>
+        <div class="page_how-item_icon">
+          <img src="assets/img/icons/blocks.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="page_how-item">
+      <div class="page_how-item_content">
+          <div class="page_how-item_number">3</div>
+          <div class="page_how-item_text">
+            <h2>Mining the blocks</h2>
+            <p class="text">
+              Blocks are mined by randomly guessing secret which is hard to find but easy to check
+            </p>
+          </div>
+        </div>
+        <div class="page_how-item_icon">
+          <img src="assets/img/icons/mining.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="page_how-item is-inverted">
+      <div class="page_how-item_content">
+          <div class="page_how-item_number">4</div>
+          <div class="page_how-item_text">
+            <h2>Miners are awarded</h2>
+            <p class="text">
+              First to find this secret is awarded block reward and block is appended to the ledger held by the network, since other nodes can easily check if the solution is correct
+            </p>
+          </div>
+        </div>
+        <div class="page_how-item_icon">
+          <img src="assets/img/icons/award.svg" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="page_we_do">
+  <div class="container">
+    <div class="page_we_do-inner centered">
+      <h1>What we do?</h1>
+      <p class="text">Our services provide an accessible and secure way for investors to mine. We handle the technical side for investors while they pick up the profits from mining</p>
+
+      <div class="page_we_do-items">
+        
+          <div class="page_we_do-item">
+            <div class="page_we_do-item_icon">
+              <img src="assets/img/icons/invest.svg">
+            </div>
+
+            <p class="text">
+              By investing money into our specialized hardware, you become the owner of the miner
+            </p>
+          </div>
+        
+          <div class="page_we_do-item">
+            <div class="page_we_do-item_icon">
+              <img src="assets/img/icons/technics.svg">
+            </div>
+
+            <p class="text">
+              We handle the mining process and the maintenance of the miners you invested into
+            </p>
+          </div>
+        
+          <div class="page_we_do-item">
+            <div class="page_we_do-item_icon">
+              <img src="assets/img/icons/analytics.svg">
+            </div>
+
+            <p class="text">
+              You gather all the miner’s future profit without ever having to take of it
+            </p>
+          </div>
+        
+      </div>
+
+      <div class="page_we_do-subtext">
+        <p class="text">We provide transport and delivery of invested miners,<br>if you ever decide to opt out</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page_info">
+  <div class="container">
+    <h1 class="centered">The ways you can profit</h1>
+    <div class="page_info-details">
+      
+        <div class="page_info-detail">
+          <h3>Different mining opportunities</h3>
+          <p class="text is-small">
+            With hardware we use, investors have the possibility to mine a wide range of popular and alternative cryptocurrencies. Those include Ethereum, Monero, Zcash and many more. Choosing the currency to mine is also part of the risk and influences the overall profitability.
+          </p>
+        </div>
+      
+        <div class="page_info-detail">
+          <h3>Guaranteed coin profitability</h3>
+          <p class="text is-small">
+            We provide a world-class development team working on continuously improving our platform. We are aiming to make the most out of the state-of-the-art technologies while providing a stable, modular and scalable platform.
+          </p>
+        </div>
+      
+        <div class="page_info-detail">
+          <h3>Mining Pool</h3>
+          <p class="text is-small">
+            To minimize the stagnation of profit, miners are added to so called “mining pools”, which is collaboration of multiple miners who mine the same block in order to increase their chances of processing a profitable block. Depending on the size of the pool, overall profit is split between miners. We are implementing our own mining pool in order to increase both effectiveness and profitability of pools.
+          </p>
+        </div>
+      
+        <div class="page_info-detail">
+          <h3>Auto-switching mining</h3>
+          <p class="text is-small">
+            Our data scientists are working on machine learning algorithms for gathering and predicting the coin values and automatically switching miners to work on the most profitable ones. With a volatile market, this projects requires careful attention before being put in place.
+          </p>
+        </div>
+      
+    </div>
+    <br>
+    <h1 class="centered">Problems we solve</h1>
+    <div class="page_info-details">
+      
+        <div class="page_info-detail">
+          <h3>Different mining opportunities</h3>
+          <p class="text is-small">
+            With suspicious and unknown companies working with cryptocurrencies, it is required caution and patience. Our goal is to be a dependable and trustworthy partner in a new and promising market Our board consists of high-profile people from companies and institutions like Kloepfel Consulting, Sales Experts GmbH and Humboldt University.
+          </p>
+        </div>
+      
+        <div class="page_info-detail">
+          <h3>Remove technical overhead</h3>
+          <p class="text is-small">
+            Miners require monitoring and regular maintenance, for which we have a specialized and experienced team. Investors never have to think about their miners, our team performs constant monitoring and regular maintenance.
+          </p>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="page_benefits">
+  <div class="container">
+    <div class="page_benefits-inner">
+      <h1 class="centered">We provide benefits</h1>
+      <div class="page_benefits-items">
+        
+          <div class="page_benefits-item">
+            <div class="page_benefits-item_icon">
+              <img src="assets/img/icons/teamwork.svg">
+            </div>
+            <div class="page_benefits-item_text">
+              <h3>Industry experts and market veterans</h3>
+              <p class="text is-small">
+                We have developed in-house software which gives our miners advantage over ordinary ones. We achieved a performance increase of minimum 20% than the out-of-the-box solution, and we plan to get even higher. This means we give you more for the same investment.
+              </p>
+            </div>
+          </div>
+        
+          <div class="page_benefits-item">
+            <div class="page_benefits-item_icon">
+              <img src="assets/img/icons/expand.svg">
+            </div>
+            <div class="page_benefits-item_text">
+              <h3>Scalable infrastructure</h3>
+              <p class="text is-small">
+                We own and maintain miner farms throughout Europe, allowing fast scalability. We can always fulfill orders, without making any compromises . Maintenance work includes making sure that our spaces are up to standard and that miners and in a perfect condition. We use tested failover systems for electricity and network connection, guaranteeing 99% uptime of miners.
+              </p>
+            </div>
+          </div>
+        
+          <div class="page_benefits-item">
+            <div class="page_benefits-item_icon">
+              <img src="assets/img/icons/television.svg">
+            </div>
+            <div class="page_benefits-item_text">
+              <h3>Always on-demand</h3>
+              <p class="text is-small">
+                Providing investors with the service of building your own farm. We take in on ourselves to make sure it’s running smoothly, while investors create their farms and gather the profits.
+              </p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page_council">
+  <div class="container">
+    <h1 class="centered">Our advisory council</h1>
+    <p class="text centered">To achieve the goal of being a trustworthy partner, we are working with esteemed industry experts and our board consist of high-profile people in the business and academy</p>
+    <div class="page_council-members">
+      
+        <div class="page_council-member">
+          <div class="page_council-member_image">
+            <img src="assets/img/team/marc_kloepfel.jpg">
+          </div>
+          <div class="page_council-member_bio">
+            <p class="text is-small">
+              <b>Marc Kloepfel</b> specialized in purchasing, logistics and supply chain management at an early stage during his international studies. In 2007, together with Efe Duran Sarikaya, he founded the purchasing consultancy Kloepfel Consulting.<br><br>With more than 15 years of cross-industry experience in the field of integrated procurement optimization, he is also in demand as a speaker and interview partner. In addition, he sat down in various international business organizations for a strengthening of shopping.
+            </p>
+          </div>
+        </div>
+      
+        <div class="page_council-member">
+          <div class="page_council-member_image">
+            <img src="assets/img/team/philipp_heyman.jpg">
+          </div>
+          <div class="page_council-member_bio">
+            <p class="text is-small">
+              <b>Philipp Heyman</b> is an experienced entrepreneur in the field of business consulting and new technologies. He has a lot of expertise, especially in the environment of Blockchain and The Internet of Things (IoT).<br><br>With more than 20 experienced hardware and software employees, he is able to run the Mining operations with close coordination of technical and business aspects.
+            </p>
+          </div>
+        </div>
+      
+        <div class="page_council-member">
+          <div class="page_council-member_image">
+            <img src="assets/img/team/hans_vastert.jpg">
+          </div>
+          <div class="page_council-member_bio">
+            <p class="text is-small">
+              <b>Hans-Christian Vastert</b>, a graduate in business administration, is the co-founder and the vice president of Kloepfel Corporate Finance GmbH.<br><br>Mr. Vastert was previously involved in the worldwide established M&A Advisory Services, in more than 37 countries. Mr. Vastert is CFO of and thus responsible for the finance and reporting of domestic and foreign subsidiaries.
+            </p>
+          </div>
+        </div>
+      
+       
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="page_team centered">
+  <div class="container">
+    <h1>Our team</h1>
+    <p class="text">To achieve the ambitious goal of enabling investors to profit without ever having to think about the physical infrastructure, we are deploying a team of enthusiastic and battle-strained hardware and software engineers.<br><br>As the specialized hardware and GPUs are the backbone of the financial success, it is of the utmost importance that each miner is performing at its best, and our team is making sure that the hardware is working under the best circumstances.</p>
+    <div class="page_team-members">
+      
+        <div class="page_team-member">
+          <div class="page_team-member_image">
+            <img src="assets/img/team/nermin_tuka.jpg">
+          </div>
+          <div class="text">
+            Nermin Tuka
+          </div>
+        </div>
+      
+        <div class="page_team-member">
+          <div class="page_team-member_image">
+            <img src="assets/img/team/emir_gogalic.jpg">
+          </div>
+          <div class="text">
+            Emir Gogalić
+          </div>
+        </div>
+      
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <b>&copy; 2018 Blackchain Group</b>
+      <span class="separator">·</span>
+      
+      <a href="/#how">How it works</a>
+      <span class="separator">·</span>
+      
+      <a href="/#faq">FAQ</a>
+      <span class="separator">·</span>
+      
+      <a href="contact.html">Contact</a>
+      
+      
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="assets/js/calculator.js"></script>
+<script src="assets/js/chart.js"></script>
+</html>

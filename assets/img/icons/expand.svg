@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>expand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-314.000000, -7526.000000)">
+        <g id="Benefits" transform="translate(30.000000, 6984.000000)" fill-rule="nonzero">
+            <g id="2" transform="translate(220.000000, 478.000000)">
+                <g id="Group-7">
+                    <g id="expand" transform="translate(64.000000, 64.000000)">
+                        <polygon id="Shape" fill="#FFFFFF" points="6.32000546 3.70218819 15.2715263 3.70218819 15.2715263 0 0 0 0 15.2715263 3.70218819 15.2715263 3.70218819 6.32000546 16.3821827 19 19 16.3821827"></polygon>
+                        <polygon id="Shape" fill="#5EFFC2" points="19 31.6178173 16.3821827 29 3.70218819 41.6799945 3.70218819 32.7284737 0 32.7284737 0 48 15.2715263 48 15.2715263 44.2978118 6.32000546 44.2978118"></polygon>
+                        <polygon id="Shape" fill="#5EFFC2" points="32.7284737 0 32.7284737 3.70218819 41.6799945 3.70218819 29 16.3821827 31.6178173 19 44.2978118 6.32000546 44.2978118 15.2715263 48 15.2715263 48 0"></polygon>
+                        <polygon id="Shape" fill="#FFFFFF" points="44.2978118 32.7284737 44.2978118 41.6799945 31.6178173 29 29 31.6178173 41.6799945 44.2978118 32.7284737 44.2978118 32.7284737 48 48 48 48 32.7284737"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
